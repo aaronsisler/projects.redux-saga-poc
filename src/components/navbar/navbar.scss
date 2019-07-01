@@ -20,7 +20,7 @@
     }
     &__brand {
       a {
-        @include font-type($accentFont, $midlarge, bold);
+        @include font-type($mainFont, $midlarge, bold);
 
         color: white;
         letter-spacing: 0.1rem;
