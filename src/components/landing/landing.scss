@@ -7,14 +7,36 @@
   .landing {
     @include font-type($mainFont, $large);
 
-    align-content: center;
+    background: $containerBackgroundColor;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: $small 20%;
-    text-align: center;
-    div {
+    flex: 1 1 auto;
+    &__counter {
       align-content: center;
+      background-color: white;
       display: grid;
+      filter: $dropShadow;
+      grid-template-columns: repeat(3, 1fr);
+      margin: $small 20%;
+      padding: $large;
+      text-align: center;
+      div {
+        align-content: center;
+        display: grid;
+      }
+    }
+
+    &__notifications, &__retrieve-data, &__save-data {
+      align-content: center;
+      background-color: white;
+      display: grid;
+      filter: $dropShadow;
+      margin: $small 20%;
+      padding: $large;
+      text-align: center;
+      div {
+        align-content: center;
+        display: grid;
+      }
     }
   }
 }
