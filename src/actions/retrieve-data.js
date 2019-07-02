@@ -2,7 +2,10 @@ export const REQUEST_RETRIEVE_DATA = "REQUEST_RETRIEVE_DATA";
 export const RETRIEVE_DATA = "RETRIEVE_DATA";
 
 export const failToRetrieveData = () =>
-  Promise.reject({ statusCode: 500, message: "Something broke" });
+  Promise.reject({
+    statusCode: 500,
+    message: "Something broke retrieving data"
+  });
 
 export const retrieveData = async () => {
   try {

@@ -1,7 +1,7 @@
 export const REQUEST_SAVE_DATA = "REQUEST_SAVE_DATA";
 
 export const failToSaveData = () =>
-  Promise.reject({ statusCode: 500, message: "Something broke" });
+  Promise.reject({ statusCode: 500, message: "Something broke saving data" });
 
 export const saveData = async () => {
   try {
