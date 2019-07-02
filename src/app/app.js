@@ -1,13 +1,13 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import AppContainer from "../containers/app-container";
-import "normalize.css/normalize.css";
-import "./app.scss";
+import { Provider } from "react-redux";
+
+import store from "../store";
+import Landing from "../components/landing";
 
 const App = () => (
-  <BrowserRouter>
-    <AppContainer />
-  </BrowserRouter>
+  <Provider store={store}>
+    <Landing />
+  </Provider>
 );
 
 export default App;
