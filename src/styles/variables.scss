@@ -2,6 +2,7 @@
 $mainColor: #4785d6;
 $darkMainColor: darken($mainColor, 10);
 $mainColorGradient: linear-gradient(45deg, $darkMainColor 25%, $mainColor 100%);
+$superLightGrey: #f8f8f8;
 $lightGrey: #f3f3f3;
 $midLightGrey: #e8e8e8;
 $midGrey: #666666;
@@ -11,6 +12,9 @@ $closeIconGrey: #aaa;
 $borderGrey: #bbb;
 $border: 1px solid $borderGrey;
 $boxShadowGrey: rgba(189, 195, 199, 0.6);
+$dropShadow: drop-shadow(3px 3px 6px $boxShadowGrey);
+$containerBackgroundColor: $superLightGrey;
+
 //Spacing
 $xxsmall: 0.3rem;
 $xsmall: 0.6rem;

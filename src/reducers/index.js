@@ -1,14 +1,4 @@
-const counterReducerDefaultState = 0;
+import counterReducer from "./counter";
+import notificationReducer from "./notification";
 
-const counterReducer = (state = counterReducerDefaultState, action) => {
-  switch (action.type) {
-    case "DECREMENT":
-      return state - 1;
-    case "INCREMENT":
-      return state + 1;
-    default:
-      return state;
-  }
-};
-
-export default counterReducer;
+export { counterReducer, notificationReducer };
