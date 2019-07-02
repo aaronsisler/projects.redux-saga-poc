@@ -5,6 +5,17 @@
 //max-width 640px, small screens
 @media only screen {
   .landing {
+    @include font-type($mainFont, $large);
+
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: $small 20%;
+    text-align: center;
+    div {
+      align-content: center;
+      display: grid;
+    }
   }
 }
 
